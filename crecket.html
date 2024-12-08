@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cricket Match</title>
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Bat Ball Stump Game</h1>
+    <button
+      onclick="cumputerChoises()
+      let resultMsg ;
+      console.log(computerChoise);
+    if(computerChoise === 'Ball'){
+      resultMsg = 'You are Won.';
+    }else if(computerChoise === 'Stump'){
+      resultMsg = 'Computer is Won.'
+    }else if(computerChoise === 'Bat'){
+      resultMsg = 'Game is Tit';
+    }
+
+    alert(` You are Chose Bate, Computer has Chose ${computerChoise} and ${resultMsg}`)"
+    >
+      Bat
+    </button>
+    <button
+      onclick="cumputerChoises()
+      //let resultMsg ;
+      console.log(computerChoise);
+    if(computerChoise === 'Stump'){
+      resultMsg = 'You are Won.';
+    }else if(computerChoise === 'Bat'){
+      resultMsg = 'Computer is Won.'
+    }else if(computerChoise === 'Ball'){
+      resultMsg = 'Game is Tit';
+    }
+
+    alert(` You are Chose Ball, Computer has Chose ${computerChoise} and ${resultMsg}`) "
+    >
+      Ball
+    </button>
+    <button
+      onclick=" cumputerChoises()
+    
+      //let resultMsg ;
+      console.log(computerChoise);
+    if(computerChoise === 'Bat'){
+      resultMsg = 'You are Won.';
+    }else if(computerChoise === 'Ball'){
+      resultMsg = 'Computer is Won.'
+    }else if(computerChoise === 'Stump'){
+      resultMsg = 'Game is Tit';
+    }
+
+    alert(` You are Chose Stump, Computer has Chose ${computerChoise} and ${resultMsg}`)"
+    >
+      Stump
+    </button>
+
+    <script>
+      let computerChoise;
+      function cumputerChoises() {
+        let randome = Math.random() * 3;
+        if (randome > 0 && randome <= 1) {
+          computerChoise = `Bat`;
+        } else if (randome > 1 && randome <= 2) {
+          computerChoise = `Ball`;
+        } else if (randome > 2 && randome <= 3) {
+          computerChoise = `Stump`;
+        }
+      }
+    </script>
+  </body>
+</html>
